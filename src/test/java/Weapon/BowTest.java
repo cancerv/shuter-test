@@ -6,8 +6,9 @@ import org.junit.jupiter.api.Test;
 public class BowTest {
     @Test
     public void testShoot_success() {
+        String actual = "Стеляет стрелами";
         Bow bow = new Bow();
-        String shot = bow.shot();
-        Assertions.assertEquals("Стеляет стрелами", shot);
+        String expected = bow.shot();
+        Assertions.assertEquals(actual, expected);
     }
 }
